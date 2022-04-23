@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "448506636375",
+    "project_id": "campus-admin-49bd9",
+    "storage_bucket": "campus-admin-49bd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448506636375:android:d5254118ac78a3e4585b12",
+        "android_client_info": {
+          "package_name": "com.example.campusadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448506636375-qtjn7amd1hmrdmog13o3vnapqf2k6gnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTQPSt_D3BcmlcKhCUhZE7PNKEZLYeX4c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448506636375-qtjn7amd1hmrdmog13o3vnapqf2k6gnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

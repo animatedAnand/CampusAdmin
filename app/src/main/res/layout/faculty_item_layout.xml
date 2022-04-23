@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="6dp"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.2">
+
+            <TextView
+                android:id="@+id/tv_faculty_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="Joydeep Dhar"/>
+            <TextView
+                android:id="@+id/tv_faculty_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="Jd19@gmail.com"/>
+            <TextView
+                android:id="@+id/tv_faculty_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="4dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"
+                android:text="Professor"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bt_update_faculty_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_faculty_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:padding="8dp"
+            android:src="@drawable/ic_profile"/>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    tools:context=".faculty.UpdateFaculty">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_faculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        style="@style/Widget.Design.FloatingActionButton"
+        app:fabSize="normal"
+        android:src="@drawable/ic_add"
+        android:elevation="3dp"
+        android:layout_margin="16dp"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Computer Science"
+                android:layout_gravity="center"
+                android:layout_marginVertical="12dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginVertical="2dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_cs_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:id="@+id/cv_no_cs_faculty_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/no_faculty_data_found"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MBA Department"
+                android:layout_gravity="center"
+                android:layout_marginVertical="12dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginVertical="2dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_mba_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:id="@+id/cv_no_mba_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/no_faculty_data_found"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PHD Scholars"
+                android:layout_gravity="center"
+                android:layout_marginVertical="12dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black"
+                android:layout_marginVertical="2dp"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_phd_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:nestedScrollingEnabled="false"/>
+            <LinearLayout
+                android:id="@+id/cv_no_phd_faculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/no_faculty_data_found"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
